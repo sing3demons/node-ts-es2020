@@ -136,7 +136,7 @@ async function getPostsAndPopulateAuthor(db: Db): Promise<Post[]> {
           },
         },
         {
-          $limit: limit ? limit : 40, // Limit the number of documents
+          $limit: limit ? limit : 15,
         },
       ])
       .toArray()
